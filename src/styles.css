@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+:root,
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: rgb(26, 24, 24);
+}
+
+#app {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  max-width: 600px;
+  margin: 0px auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  color: white;
+  background: transparent;
+  z-index: 1080;
+}
+
+header > .brand > p {
+  font-weight: 600;
+}
+header > a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+section {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: red;
+  z-index: 1;
+
+  display: grid;
+  place-items: center;
+  color: white;
+  overflow: hidden;
+}
+
+section > p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 8vw;
+  margin: 0px 15vw;
+  width: 70vw;
+
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+section > p > span {
+  font-family: "Pacifico", cursive !important;
+}
+
+.layer1 {
+  background-color: midnightblue;
+}
+
+.layer2 {
+  background-color: salmon;
+  width: 50%;
+}
+
+.layer2 > p > span {
+  color: midnightblue;
+}
+
+.layer1 > p > span {
+  color: salmon;
+}
